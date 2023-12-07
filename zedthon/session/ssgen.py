@@ -23,7 +23,7 @@ def clear_screen():
 
 
 def get_api_id_and_hash():
-    print("Tepthon Session Pyrogram")
+    print("Runthon Session Pyrogram")
     print("\n---------------------------\n")
     try:
         API_ID = int(input("Please enter your API ID: "))
@@ -41,9 +41,9 @@ def telethon_session():
         x = "\bFound an existing installation of Telethon...\nSuccessfully Imported.\n\n"
     except ImportError:
         print("Installing Telethon...")
-        os.system("pip uninstall telethon -y && pip install -U telethon")
+        os.system("pip uninstall telethon -y && pip install -U runthon")
 
-        x = "\bDone. Installed and imported Telethon."
+        x = "\bDone. Installed and imported Runthon."
     clear_screen()
     print(x)
 
@@ -61,12 +61,12 @@ def telethon_session():
 
     # logging in
     try:
-        with TelegramClient(StringSession(), API_ID, API_HASH) as Tepthon:
-            print("Generating a string session for •Tepthon•")
+        with TelegramClient(StringSession(), API_ID, API_HASH) as Runthon:
+            print("Generating a string session for •Runthon•")
             try:
                 Tepthon.send_message(
                     "me",
-                    f"**- هـذا هو كـود سيشـن تيليثـون الخـاص بـك ☑️**:\n\n`{Tepthon.session.save()}`\n\n**- لا تشـارك هـذا الكـود مع اي احـد ⚠️؟!**\n**- فقـط قم بنسخـه ولصقـه في مربعـات التنصيب 🛃**\n\n**- سـورس رنـثون : @xLxLxLrr3**",
+                    f"**- هـذا هو كـود سيشـن تيليثـون الخـاص بـك ☑️**:\n\n`{Runthon.session.save()}`\n\n**- لا تشـارك هـذا الكـود مع اي احـد ⚠️؟!**\n**- فقـط قم بنسخـه ولصقـه في مربعـات التنصيب 🛃**\n\n**- سـورس رنـثون : @xLxLxLrr3**",
                 )
                 print(
                     "Your SESSION has been generated. Check your Telegram saved messages!"
