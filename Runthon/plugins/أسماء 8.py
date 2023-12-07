@@ -5,9 +5,9 @@ import os
 import urllib
 
 from telethon.tl import functions
-from Tepthon import zedub
-from Tepthon.core.managers import edit_delete, edit_or_reply
-from Tepthon.sql_helper.globals import addgvar, gvarstatus
+from Runthon import zedub
+from Runthon.core.managers import edit_delete, edit_or_reply
+from Runthon.sql_helper.globals import addgvar, gvarstatus
 
 plugin_category = "utils"
 
