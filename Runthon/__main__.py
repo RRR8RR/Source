@@ -36,8 +36,8 @@ if not Config.ALIVE_NAME:
     except Exception as e:
         LOGS.error(f"- {e}")
 
-try: #Code by T.me/E_7_V
-    LOGS.info("⌭ بـدء تنزيـل تيـبثون ⌭")
+try: #Code by T.me/BxxBxxL
+    LOGS.info("⌭ بـدء تنزيـل رنـثون ⌭")
     zedub.loop.run_until_complete(setup_bot())
     LOGS.info("⌭ بـدء تشغيل البـوت ⌭")
 except Exception as e:
@@ -59,7 +59,7 @@ async def startup_process():
     print("➖➖➖➖➖ سورس رنثون™ ➖➖➖➖➖")
     print("تـم التنصـيب .. بنجـاح ✓")
     print(
-        f"⌔┊تـم تنصيـب رنـثون يـوزر بـوت . . بنجـاح 🧸♥️ \n\n⌔┊تحيـاتي ..  محـمد\n⌔┊قنـاة السـورس ↶.\n🌐┊@xLxLxLrr3"
+        f"⌔┊تـم تنصيـب رنـثون يـوزر بـوت . . بنجـاح 🧸♥️ \n\n⌔┊تحيـاتي ..  علش\n⌔┊قنـاة السـورس ↶.\n🌐┊@xLxLxLrr3"
     )
     print("➖➖➖➖➖ سورس رنثون™ ➖➖➖➖➖")
     await verifyLoggerGroup()
