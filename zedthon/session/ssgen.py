@@ -64,7 +64,7 @@ def telethon_session():
         with TelegramClient(StringSession(), API_ID, API_HASH) as Runthon:
             print("Generating a string session for •Runthon•")
             try:
-                Tepthon.send_message(
+                Runthon.send_message(
                     "me",
                     f"**- هـذا هو كـود سيشـن تيليثـون الخـاص بـك ☑️**:\n\n`{Runthon.session.save()}`\n\n**- لا تشـارك هـذا الكـود مع اي احـد ⚠️؟!**\n**- فقـط قم بنسخـه ولصقـه في مربعـات التنصيب 🛃**\n\n**- سـورس رنـثون : @xLxLxLrr3**",
                 )
@@ -74,7 +74,7 @@ def telethon_session():
                 return
             except UserIsBotError:
                 print("You are trying to Generate Session for your Bot's Account?")
-                print("Here is That \n{Tepthon.session.save()}\n\n")
+                print("Here is That \n{Runthon.session.save()}\n\n")
                 print("NOTE: You can't use that as User Session..")
     except ApiIdInvalidError:
         print(
@@ -112,7 +112,7 @@ def pyro_session():
     API_ID, API_HASH = get_api_id_and_hash()
     print("Enter phone number when asked.\n\n")
     with Client(
-        name="Tepthon", api_id=API_ID, api_hash=API_HASH, in_memory=True
+        name="Runthon", api_id=API_ID, api_hash=API_HASH, in_memory=True
     ) as pyro:
         ss = pyro.export_session_string()
         pyro.send_message(
