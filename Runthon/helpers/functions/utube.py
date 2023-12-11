@@ -74,7 +74,7 @@ class YT_Search_X:
         if not os.path.exists(PATH):
             with open(PATH, "w") as f_x:
                 ujson.dump({}, f_x)
-        with open(PATH) as yt_db:
+        with open(PATH, "w") as yt_db:
             self.db = ujson.load(yt_db)
 
     def store_(self, rnd_id: str, results: dict):
